@@ -123,19 +123,32 @@ app/fast:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+#=============================================================================
+# Target rules for targets named applib
+
+# Build rule for target.
+applib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 applib
+.PHONY : applib
+
+# fast build rule for target.
+applib/fast:
+	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/build
+.PHONY : applib/fast
+
 # target to build an object file
 foo.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/foo.o
+	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/foo.o
 .PHONY : foo.o
 
 # target to preprocess a source file
 foo.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/foo.i
+	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/foo.i
 .PHONY : foo.i
 
 # target to generate assembly for a file
 foo.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/foo.s
+	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/foo.s
 .PHONY : foo.s
 
 # target to build an object file
@@ -160,8 +173,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... app"
+	@echo "... edit_cache"
+	@echo "... applib"
 	@echo "... foo.o"
 	@echo "... foo.i"
 	@echo "... foo.s"

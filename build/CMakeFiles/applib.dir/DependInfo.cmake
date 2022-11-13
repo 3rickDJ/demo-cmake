@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/erick/Code/repos/cmakeLearn/tuto2/main.cpp" "/home/erick/Code/repos/cmakeLearn/tuto2/build/CMakeFiles/app.dir/main.o"
+  "/home/erick/Code/repos/cmakeLearn/tuto2/foo.cpp" "/home/erick/Code/repos/cmakeLearn/tuto2/build/CMakeFiles/applib.dir/foo.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/erick/Code/repos/cmakeLearn/tuto2/build/CMakeFiles/applib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
