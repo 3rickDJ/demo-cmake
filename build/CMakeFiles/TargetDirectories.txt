@@ -1,3 +1,0 @@
-/home/erick/Code/repos/cmakeLearn/tuto2/build/CMakeFiles/rebuild_cache.dir
-/home/erick/Code/repos/cmakeLearn/tuto2/build/CMakeFiles/edit_cache.dir
-/home/erick/Code/repos/cmakeLearn/tuto2/build/CMakeFiles/app.dir

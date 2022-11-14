@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/app.dir/main.o CMakeFiles/app.dir/src/foo.o  -o app 
