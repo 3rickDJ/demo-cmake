@@ -123,34 +123,6 @@ app/fast:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
-#=============================================================================
-# Target rules for targets named applib
-
-# Build rule for target.
-applib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 applib
-.PHONY : applib
-
-# fast build rule for target.
-applib/fast:
-	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/build
-.PHONY : applib/fast
-
-# target to build an object file
-foo.o:
-	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/foo.o
-.PHONY : foo.o
-
-# target to preprocess a source file
-foo.i:
-	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/foo.i
-.PHONY : foo.i
-
-# target to generate assembly for a file
-foo.s:
-	$(MAKE) -f CMakeFiles/applib.dir/build.make CMakeFiles/applib.dir/foo.s
-.PHONY : foo.s
-
 # target to build an object file
 main.o:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.o
@@ -166,6 +138,21 @@ main.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.s
 .PHONY : main.s
 
+# target to build an object file
+src/foo.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/foo.o
+.PHONY : src/foo.o
+
+# target to preprocess a source file
+src/foo.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/foo.i
+.PHONY : src/foo.i
+
+# target to generate assembly for a file
+src/foo.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/foo.s
+.PHONY : src/foo.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,15 +160,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... app"
 	@echo "... edit_cache"
-	@echo "... applib"
-	@echo "... foo.o"
-	@echo "... foo.i"
-	@echo "... foo.s"
+	@echo "... app"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/foo.o"
+	@echo "... src/foo.i"
+	@echo "... src/foo.s"
 .PHONY : help
 
 

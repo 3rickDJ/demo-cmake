@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.4)
+set(CMAKE_CXX_STANDARD 17)
 
 project(hello_world)
 
-include_directories ( ${PROJECT_SOURCE_DIR})
-add_library (applib foo.cpp)
-add_executable (app main.cpp)
-target_link_libraries (app applib)
+file(GLOB_RECURSE SRC_FILES src/*.cpp)
+add_executable (app main.cpp ${SRC_FILES})
+target_include_directories (app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
