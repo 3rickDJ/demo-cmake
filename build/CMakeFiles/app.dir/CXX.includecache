@@ -8,13 +8,9 @@
 
 ../include/foo.h
 
-/home/erick/Code/repos/cmakeLearn/tuto2/main.cpp
-foo.h
--
-
 /home/erick/Code/repos/cmakeLearn/tuto2/src/foo.cpp
 iostream
 -
 foo.h
--
+/home/erick/Code/repos/cmakeLearn/tuto2/src/foo.h
 

@@ -1,7 +1,7 @@
 #include <iostream>
-#include <foo.h>
+#include "foo.h"
 
 void foo()
 {
-    std::cout << "Hello wordl!\n";
+    std::cout << "Hello 3rick!\n";
 }
